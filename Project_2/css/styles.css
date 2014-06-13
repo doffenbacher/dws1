@@ -1,0 +1,47 @@
+body {
+	font-family: arial; 
+	font-size: 16px;
+	padding: 18px;
+	background-image: url("bg-11.jpg");
+	line-height: 1.5em;
+	}
+	
+h1 {
+	padding: 1px 1px 30px;
+	}
+.link {
+	text-shadow: 2px 2px 7px #111111;
+	}
+.quote {
+	margin: 30px;
+	}
+.goals {
+	margin: 30px;
+	}
+.examplePictures {
+	margin: 50px 50px 5px;
+	}
+a, a:visited {
+	color: hsla(165, 100%, 57%, 0.8);
+	}	
+a:hover {
+	color: hsla(328, 100%, 53.9%, 0.8);
+	}
+a:active {
+	color: blueviolet;
+	}	
+ul {
+	list-style: inside circle;
+	}
+#supporting {
+	color: red;
+	}
+#about2, #mission2 {
+	border-style: outset;
+	}
+#good {
+	color: green;
+	}
+#bad {
+	color: red;
+	}
