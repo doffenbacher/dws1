@@ -4,6 +4,9 @@ body {
 	padding: 18px;
 	background-image: url("bg-11.jpg");
 	line-height: 1.5em;
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 	}
 	
 h1 {

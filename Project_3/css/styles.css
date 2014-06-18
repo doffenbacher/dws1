@@ -1,0 +1,73 @@
+/* CSS Document */
+
+body { /* entire page */
+	font-family: font-family: 'Ubuntu', Arial, sans-serif;
+	font-size: 16px;
+	padding: 20px;
+	background-image: url("bg-11.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	line-height: 1.5em;
+	margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+	}
+	
+h1 { /* main title */
+	text-align:center;
+	padding: 1px 1px 30px;
+	}
+h3 { /*subtitles*/
+	font-style:italic;
+	}
+p { /* main paragraph */
+	text-align:center;
+	}
+.link { /* class= "link" w/ a shade a black */
+	text-shadow: 2px 2px 7px #111111;
+	}
+.quote { /* class= "quote" */
+	text-align: left;
+	margin: 30px;
+	}
+.goals { /* class= "goals" */
+	margin: 30px;
+	}
+.examplePictures { /* class= "examplePictures" adds border with margins */
+	border: 2px solid #a1a1a1;
+    padding: 10px 10px 1px; 
+    background: #439a9b;
+    width: 1015px;
+    border-radius: 15px;
+	margin: 50px 50px 1px;
+	}
+a, a:visited { /* links changes text color */
+	color: hsla(165, 100%, 57%, 0.8);
+	}	
+a:hover { /* links change color when mouse is hovering link */
+	color: hsla(328, 100%, 53.9%, 0.8);
+	}
+a:active { /* links changes text color */
+	color: blueviolet;
+	}	
+ul { /* changes the bullet of list */
+	list-style: inside circle;
+	}
+#navigation { /* id= "navigation" changes case to uppercase */
+	text-transform: uppercase;
+	}
+#supporting { /* id= "supporting" changes text color */
+	color: #FF0000;
+	}
+#about2, #mission2 { /* id= "about2" "mission2" given a border */
+	border-style: outset;
+	}
+#good { /* id= "good" changes text color */
+	color: #009933;
+	}
+#bad { /* id= "bad" changes text color */
+	color: #FF0000;
+	}
+#picsBy { /* id= "picsBy" adds a margin */
+	margin: 10px 1px 40px 90px;
+	}
