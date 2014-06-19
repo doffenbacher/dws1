@@ -4,44 +4,46 @@ body { /* entire page */
 	font-family: font-family: 'Ubuntu', Arial, sans-serif;
 	font-size: 16px;
 	padding: 20px;
-	background-image: url("bg-11.jpg");
-	background-repeat: no-repeat;
-	background-position: center top;
+	width: 1100px;
+	background: url("../images/bg-11.jpg") no-repeat center top; /* background image(gradient could be used) */
 	line-height: 1.5em;
 	margin-left: auto;
     margin-right: auto;
-    width: 90%;
 	}
 	
+/*  gradient to use if client didn't want a background image 
+#gradient {
+	background-color: #6cc no-repeat center top;
+	background: -webkit-linear-gradient(#366, #6cc) no-repeat center top;
+	background: linear-gradient(#366, #6cc) no-repeat center top;
+	}  */
+
 h1 { /* main title */
+	font-size: 38px;
 	text-align:center;
-	padding: 1px 1px 30px;
+	padding: 1px;
+	}
+#header1 {
+	border: 5px solid #439a9b;
+	margin: 5px;
+	padding: 5px;
+	}
+#wellness { /* floats image to right of text */
+	float: right;
+	padding: 0 10px;
 	}
 h3 { /*subtitles*/
-	font-style:italic;
+	font-size: 22px;
+	padding: 30px 0 0;
+	}
+h4 { /*subtitles*/
+	font-size: 20px;
+	padding: 30px 0 0;
 	}
 p { /* main paragraph */
 	text-align:center;
 	}
-.link { /* class= "link" w/ a shade a black */
-	text-shadow: 2px 2px 7px #111111;
-	}
-.quote { /* class= "quote" */
-	text-align: left;
-	margin: 30px;
-	}
-.goals { /* class= "goals" */
-	margin: 30px;
-	}
-.examplePictures { /* class= "examplePictures" adds border with margins */
-	border: 2px solid #a1a1a1;
-    padding: 10px 10px 1px; 
-    background: #439a9b;
-    width: 1015px;
-    border-radius: 15px;
-	margin: 50px 50px 1px;
-	}
-a, a:visited { /* links changes text color */
+a:visited { /* links changes text color */
 	color: hsla(165, 100%, 57%, 0.8);
 	}	
 a:hover { /* links change color when mouse is hovering link */
@@ -53,11 +55,51 @@ a:active { /* links changes text color */
 ul { /* changes the bullet of list */
 	list-style: inside circle;
 	}
+.link { /* class= "link" w/ a shade a black */
+	text-shadow: 2px 2px 7px #111111;
+	}
+.quote { /* class= "quote" */
+	font-size: 18px;
+	text-align: left;
+	margin: 25px;
+	}
+.goals { /* class= "goals" */
+	margin: 30px;
+	}
+#examplePictures { /* class= "examplePictures" adds border with margins */
+	text-align:center;
+	border: 2px solid #a1a1a1;
+    padding: 10px 10px 1px; 
+    background: #439a9b;
+    width: 1015px;
+    border-radius: 15px;
+	margin: 10px 1px 1px;
+	}
 #navigation { /* id= "navigation" changes case to uppercase */
 	text-transform: uppercase;
 	}
 #supporting { /* id= "supporting" changes text color */
 	color: #FF0000;
+	}
+#aboutHeader { /* 1st column */
+	float: left;
+	width: 190px;
+	margin: 10px 1px 1px 45px;
+	padding: 5px;
+	}
+#aboutList { /* 2nd column */
+	font-size: 18px;
+	line-height: 1.5em;
+	float: left;
+	width: 575px;
+	margin: 10px 25px;
+	padding: 5px;
+	}
+#sidebar { /* 3rd column */
+	float: left;
+	width: 175px;
+	margin: 1px;
+	padding: 5px;
 	}
 #about2, #mission2 { /* id= "about2" "mission2" given a border */
 	border-style: outset;
@@ -69,5 +111,12 @@ ul { /* changes the bullet of list */
 	color: #FF0000;
 	}
 #picsBy { /* id= "picsBy" adds a margin */
-	margin: 10px 1px 40px 90px;
+	margin: 10px 1px 40px 30px;
+	}
+#clearTop { /* clears so #top wont get hung up on 3rd column */
+	color: #08fa02;
+	font-size: 18px;
+	padding: 10px 0 0;
+	text-shadow: 2px 2px 7px #111111;	
+	clear: both;
 	}
