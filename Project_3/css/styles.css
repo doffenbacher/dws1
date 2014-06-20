@@ -2,7 +2,7 @@
 
 body { /* entire page */
 	font-family: font-family: 'Ubuntu', Arial, sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 	padding: 20px;
 	width: 1100px;
 	background: url("../images/bg-11.jpg") no-repeat center top; /* background image(gradient could be used) */
@@ -19,7 +19,7 @@ body { /* entire page */
 	}  */
 
 h1 { /* main title */
-	font-size: 38px;
+	font-size: 2.25em;
 	text-align:center;
 	padding: 1px;
 	}
@@ -33,7 +33,7 @@ h1 { /* main title */
 	padding: 0 10px;
 	}
 h3 { /*subtitles*/
-	font-size: 22px;
+	font-size: 1.375em;
 	padding: 30px 0 0;
 	}
 h4 { /*subtitles*/
@@ -59,7 +59,7 @@ ul { /* changes the bullet of list */
 	text-shadow: 2px 2px 7px #111111;
 	}
 .quote { /* class= "quote" */
-	font-size: 18px;
+	font-size: 1.125em;
 	text-align: left;
 	margin: 25px;
 	}
@@ -67,10 +67,13 @@ ul { /* changes the bullet of list */
 	margin: 30px;
 	}
 #examplePictures { /* class= "examplePictures" adds border with margins */
+	background: -webkit-linear-gradient(left top, #92eff0 , #046768); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #92eff0, #046768); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #92eff0, #046768); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #92eff0 , #046768); /* Standard syntax (must be last) */
 	text-align:center;
 	border: 2px solid #a1a1a1;
     padding: 10px 10px 1px; 
-    background: #439a9b;
     width: 1015px;
     border-radius: 15px;
 	margin: 10px 1px 1px;
@@ -88,7 +91,7 @@ ul { /* changes the bullet of list */
 	padding: 5px;
 	}
 #aboutList { /* 2nd column */
-	font-size: 18px;
+	font-size: 1.125em;
 	line-height: 1.5em;
 	float: left;
 	width: 575px;
@@ -115,7 +118,7 @@ ul { /* changes the bullet of list */
 	}
 #clearTop { /* clears so #top wont get hung up on 3rd column */
 	color: #08fa02;
-	font-size: 18px;
+	font-size: 1.125em;
 	padding: 10px 0 0;
 	text-shadow: 2px 2px 7px #111111;	
 	clear: both;
