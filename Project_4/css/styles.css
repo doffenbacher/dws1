@@ -5,8 +5,9 @@ body { /* entire page */
 	font-size: 1em;
 	padding: 20px;
 	width: 1100px;
-	background: url("../images/bg-11.jpg") no-repeat center top; /* background image(gradient could be used) */
-	line-height: 1.5em;
+	background: url("../images/bg-11.jpg") repeat; /* background image(gradient could be used) */
+	background-size:cover;
+	line-height: 1.25em;
 	margin-left: auto;
     margin-right: auto;
 	}
@@ -23,7 +24,7 @@ h1 { /* main title */
 	text-align:center;
 	padding: 1px;
 	}
-#header1 {
+header {
 	border: 5px solid #439a9b;
 	margin: 5px;
 	padding: 5px;
@@ -31,6 +32,25 @@ h1 { /* main title */
 #wellness { /* floats image to right of text */
 	float: right;
 	padding: 0 10px;
+	}
+nav {
+	clear: both;
+	color: #ffffff;
+	background-color: #61ce44;
+	height: 30px;
+	}
+nav ul {
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+	}
+nav li {
+	display: inline;
+	margin-right: 40px;
+	}
+nav li a {
+	color: #ffffff;}
+nav li a:hover, nav li a.current {
+	color: #000000;
 	}
 h3 { /*subtitles*/
 	font-size: 1.375em;
@@ -95,16 +115,37 @@ ul { /* changes the bullet of list */
 #aboutList { /* 2nd column */
 	font-size: 1.125em;
 	line-height: 1.5em;
-	float: left;
-	width: 575px;
+	width: 700px;
 	margin: 10px 25px;
 	padding: 5px;
-	}
-#sidebar { /* 3rd column */
 	float: left;
-	width: 175px;
-	margin: 1px;
+	clear: right;
+	}
+#hor-zebra {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 80%;
+	margin: 35px;
+	width: 200px;
+	text-align: left;
+	border-collapse: collapse;
+	}
+#hor-zebra th {
+	font-size: 100%;
+	font-weight: normal;
+	padding: 5px 5px;
+	color: #0F0;
+	}
+#hor-zebra td {
 	padding: 5px;
+	}
+#hor-zebra .odd {
+	background: #e8edff; 
+	border-collapse: collapse;
+	border: 2px solid #69c;
+	}
+#hor-zebra tbody tr:hover td {
+	color: #339;
+	background: #5bd4ee;
 	}
 #about2, #mission2 { /* id= "about2" "mission2" given a border */
 	border-style: outset;
@@ -115,8 +156,60 @@ ul { /* changes the bullet of list */
 #bad { /* id= "bad" changes text color */
 	color: #FF0000;
 	}
+#free { /* id= "free" changes text color */
+	color: #0661ae;
+	}
 #picsBy { /* id= "picsBy" adds a margin */
 	margin: 10px 1px 40px 30px;
+	}
+aside { /* 3rd column */
+	float: left;
+	}
+#contact {
+	font-size: 100%;
+	width: 675px;
+	margin: 0 20px 0 0;
+	padding: 5px;
+	float: left;
+	}
+#contactEmail {
+	text-align: left;
+	}
+#contactForm {
+	width: 125px;
+	float: left; 
+	}
+input {
+	font-size: 100%;
+	color: #5a5854;
+	background-color: #f2f2f2;
+	border: 2px solid #bdbdbd;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	}
+input#submit {
+	color: #444444;
+	text-shadow: 0px 1px 1px #ffffff;
+	border-bottom: 2px solid #b2b2b2;
+	background-color: #b9e4e3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#beeae9), to(#a8cfce));
+	background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+	background: -o-linear-gradient(top, #beeae9, #a8cfce);
+	background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+	}
+input#submit:hover {
+	color: #333333;
+	border: 2px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	background-color: #a0dbc4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a8cfce), to(#beeae9));
+	background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+	background: -o-linear-gradient(top, #a8cfce, #beeae9);
+	background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+	}
+.submit {
+	text-align: right;
 	}
 #clearTop { /* clears so #top wont get hung up on 3rd column */
 	color: #08fa02;

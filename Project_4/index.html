@@ -11,14 +11,19 @@
 	
 	<!-- content of web page -->
 	<body>
-		<div id="header1"> <!-- Headed of page -->
+		<header> <!-- Headed of page -->
 		<h1 id="top"> Holistic Lifestyle Coach at <a href="https://www.facebook.com/franbatzer"> FB Health Coach </a> </h1>
-		</div>
+		</header>
+		<nav>
 		<ul> <!-- Page Navigation -->
 			<li class= "navigation" ><a class= "link" href="#mission">Mission</a></li>
 			<li class= "navigation" ><a class= "link" href="#about">About</a></li>
+			<li class= "navigation" ><a class= "link" href="#email">Contact</a></li>
+			<li class= "navigation" ><a class= "link" href="#healthcoaching">Health Coaching</a></li>
+			<li class= "navigation" ><a class= "link" href="#freeconsultation">Free Consultation</a></li>
 		</ul>
-
+		</nav>
+		
 		<h2 id="mission"><i id="mission2">Mission</i><a id="wellness" href="images/2014_wellness_cleanse.jpg"><img src="images/2014_wellness_cleanse2.jpg" alt="2014 Wellness Cleanse"></a></h2>
 			<p class= "quote" > &quot;My focus is on the <a class= "link" href="http://en.wikipedia.org/wiki/Interconnectedness"> interconnectedness</a>  of all life and how a plant-based diet benefits the earth, non-human animals, and the individual.&quot; </p>
 		<!-- Sub Heading -->	
@@ -50,18 +55,72 @@
 			<li> Learn more about my training and my unique approach to health coaching. </li>
 			<li> Are you curious about how health coaching can help you? Let’s talk. Schedule an initial consultation with me today. </li>
 		</ul>	
-			<!-- 3rd column -->
-			<div id="sidebar">	
-			<ol>
-			<li> To see my FB Health Coach<a href="https://www.facebook.com/"><img src="images/facebook_icon.png" alt="Facebook Icon"></a> page click here <a class= "link" href="https://www.facebook.com/franbatzer"> Fran Batzer </a> </li>
-			
-			<li> To see my FB Health Coach <a href="http://pinterest.com/"><img src="images/Pinterest_Logo.png" alt="Pinterest Icon"></a> page click here <a class= "link" href="http://www.pinterest.com/fbatzer/boards/"> Fran Batzer </a> </li>
-			</ol>
-			</div>
-			<!-- link to top of page -->
-			<div id="clearTop">
+		<aside>
+			<table id="hor-zebra">
+				<thead>
+					<tr>
+						<th scope="col">Website:</th>
+						<th scope="col">Click Here:</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><a href="https://www.facebook.com/"><img src="images/facebook_icon.png" alt="Facebook Icon"></a></td>
+						<td><a class= "link" href="https://www.facebook.com/franbatzer"> Fran Batzer </a></td>
+					</tr>
+					<tr class="odd">
+						<td><a href="http://pinterest.com/"><img src="images/Pinterest_Logo.png" alt="Pinterest Icon"></a></td>
+						<td><a class= "link" href="http://www.pinterest.com/fbatzer/boards/"> Fran Batzer </a></td>
+					</tr>
+				</tbody>
+			</table>
+		<!-- Second 2nd column -->
+		</aside>
+			<article >
+				<div id="contact">
+				<p id="contactEmail"><a href="mailto:fbatzer@gmail.com">For a Free Consultation</a></p>
+				<ul>
+					<li>Do you have questions about health coaching?</li>
+					<li>Would you like to schedule an <strong id="free">Free</strong> initial consultation?</li>
+					<li>Send me an email with what info you would like to know, and I will reply shortly.</li>
+					<li>Or, you can fill out the form to the right, and I will contact you shortly.</li>
+					
+				</ul>
+				</div>
+			</article >
+		<!-- Second 3rd column -->
+			<div id="contactForm">
+				<fieldset>
+					<legend>Contact Form</legend>
+					<label for="title" class="title">Title:</label>
+					<select name="title" id="title">
+						<option value="mr">Mr.</option>
+						<option value="mrs">Mrs.</option>
+						<option value="miss">Miss</option>
+					</select><br/>
+					<label for="firstName">First Name:</label><br/>
+					<input type="text" name="firstName" id="firstName"/><br/>
+					<label for="lastName">Last Name:</label><br/>
+					<input type="text" name="lastName" id="lastName"/><br/>
+					<label for="emailList">Email:</label><br/>
+					<input type="text" name="emailList" id="emailList" placeholder="example@gmail.com"/><br/>
+					<label for="mobile">Mobile:</label><br/>
+					<input type="text" name="mobile" id="mobile" placeholder="XXX-XXX-XXXX"/><br/>
+					<span class="title">Gender:</span>
+					<input type="radio" name="gender" id="male" value="M"/>
+					<label for="male">M</label>
+					<input type="radio" name="gender" id="female" value="F"/>
+					<label for="female">F</label><br/>
+					<textarea name="healthConcerns" rows="5" cols="20">My Health Concerns are:</textarea><br/>
+					<div class="submit">
+					<input type="submit" id="submit"/>
+					</div>
+					</fieldset>
+				</div>
+		<!-- link to top of page -->
+		<div id="clearTop">
 			<p> <a href="#top">Top of Page</a> </p>
-			</div>
+		</div>
 	</body>
 	
 </html>
