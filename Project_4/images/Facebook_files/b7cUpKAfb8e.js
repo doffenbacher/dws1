@@ -1,6 +1,0 @@
-/*!CK:288537977!*//*1400864185,178198863*/
-
-if (self.CavalryLogger) { CavalryLogger.start_js(["NQXDE"]); }
-
-__d("LitestandNewStoryController",["Animation","Arbiter","AsyncRequest","DOM","EntstreamStoryDeduper","LitestandMessages","LitestandStream","Run","Style","$","queryThenMutateDOM"],function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){var r=600,s=500,t,u;function v(){u&&clearTimeout(u);u=null;}function w(){u=setTimeout(function(){u=null;x();},s);}function x(){var aa;q(function(){aa=m.canInsertNewerStories();},function(){if(aa){y();}else w();},'LitestandNewStoryController/tryShowingStories');}function y(){v();if(!t)return;k.dedupe(m.getStreamRoot(),m.getStoriesSelector());o.apply(t,{height:'',left:'',overflow:'',position:'',width:''});new g(t).from('opacity',0).to('opacity',1).duration(r).go();h.inform(l.STORIES_INSERTED);h.inform(l.NEWER_STORIES_INSERTED);h.inform('reflow');new i().setURI('/ajax/litestand/update_filter_viewtime').setData({section_id:m.getSectionID()}).send();t=null;}var z={waitForDisplay:function(aa){if(!t)t=p(aa);if(m.canInsertNewerStories()){y();}else w();}};e.exports=z;},null);
-__d("ViewShares",["DOM","$"],function(a,b,c,d,e,f,g,h){var i={};i.swapPager=function(j,k){g.replace(h(j),k);};e.exports=i;},null);
